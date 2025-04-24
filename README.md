@@ -32,26 +32,6 @@ volumes:
   web_data:
 ```
 
-## 📁 Estrutura de Diretórios do Projeto Web Utilizado
-```
-/data/nginx-A/
-├── assets/
-│   ├── css/
-│   ├── images/
-│   └── js/
-├── prints/
-├── index.html
-├── pagina-about.html
-└── README.md
-```
-
-## 🧠 Sobre o Projeto HTML + JavaScript (Pokedex)
-
-O projeto consiste em páginas HTML que utilizam JavaScript para fazer requisições HTTP à PokeAPI e exibir informações como nome, imagem e dados dos Pokémons.
-Funcionalidades:
-
-Confira o projeto na página do github: Link [Pokedex](https://github.com/rgr147/pokedex)
-
 ## 🚀 Como Executar
 
     1. Certifique-se de ter o Docker e Docker Compose instalados.
@@ -80,5 +60,23 @@ Confira o projeto na página do github: Link [Pokedex](https://github.com/rgr147
 
 ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)  ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)  ![NGINX](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)  ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
+ ## 📁 Estrutura de Diretórios do Projeto Web Utilizado
+```
+/data/nginx-A/
+├── assets/
+│   ├── css/
+│   ├── images/
+│   └── js/
+├── prints/
+├── index.html
+├── pagina-about.html
+└── README.md
+```
 
+## 🧠 Sobre o Projeto HTML + JavaScript (Pokedex)
+
+O projeto consiste em páginas HTML que utilizam JavaScript para fazer requisições HTTP à PokeAPI e exibir informações como nome, imagem e dados dos Pokémons.
+Funcionalidades:
+
+Confira o projeto na página do github: Link [Pokedex](https://github.com/rgr147/pokedex)
 
