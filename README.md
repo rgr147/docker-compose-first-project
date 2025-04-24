@@ -4,6 +4,15 @@
 
 Este projeto foi criado com fins didáticos para aprofundar o entendimento sobre [**Docker Compose**](https://docs.docker.com/compose/). Fiz uso da imagem do [**NGINX**](https://hub.docker.com/_/nginx) como servidor web para subir o meu projeto web desenvolvido com **HTML** e **JavaScript**, que consome dados da [**PokeAPI**](https://pokeapi.co/).
 
+Utilizei os arquivos do meu projeto web Pokedex para o servidor NGINX subir e realizar testes   
+
+## 🧠 Sobre o Projeto Web (Pokedex)
+
+O projeto consiste em páginas HTML que utilizam JavaScript para fazer requisições HTTP à PokeAPI e exibir informações como nome, imagem e dados dos Pokémons.
+Funcionalidades:
+
+Confira o projeto na página do github: Link [Pokedex](https://github.com/rgr147/pokedex)
+
 ## 🐳 Estrutura Docker
 
 O serviço principal é o **NGINX**, baixado via Docker Hub. O arquivo `docker-compose.yml` foi configurado para:
@@ -73,7 +82,7 @@ volumes:
 └── README.md
 ```
 
-## 🧠 Sobre o Projeto HTML + JavaScript (Pokedex)
+## 🧠 Sobre o Projeto Web (Pokedex)
 
 O projeto consiste em páginas HTML que utilizam JavaScript para fazer requisições HTTP à PokeAPI e exibir informações como nome, imagem e dados dos Pokémons.
 Funcionalidades:
