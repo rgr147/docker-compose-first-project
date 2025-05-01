@@ -2,9 +2,21 @@
 
 ## 📌 Objetivo
 
-Este projeto foi criado com fins didáticos para aprofundar o entendimento sobre [**Docker Compose**](https://docs.docker.com/compose/). Fiz uso da imagem do [**NGINX**](https://hub.docker.com/_/nginx) como servidor web para subir o meu projeto web desenvolvido com **HTML** e **JavaScript**, que consome dados da [**PokeAPI**](https://pokeapi.co/).
+Projeto criado com fins didáticos para aprofundar o entendimento sobre [**Docker Compose**](https://docs.docker.com/compose/). Fiz uso da imagem do [**NGINX**](https://hub.docker.com/_/nginx) para funcionar como servidor web do meu projeto([Pokedex](https://github.com/rgr147/pokedex)) que consome informações da API [**PokeAPI**](https://pokeapi.co/) para carregar os dados pokemon.
 
-Utilizei os arquivos do meu projeto web Pokedex para o servidor NGINX subir e realizar testes   
+## 🧠 Sobre o Projeto
+
+O projeto consiste em criar uma imagem personalizada para subir o serviço do servidor web funcional com todos os arquivos necessários para o projeto da página web funcionar.
+
+Etapas do processo:
+
+- Uso do Docker para subir containers com serviço web funcional 
+- Configuração do arquivo Dockerfile com instruções necessárias para o Docker criar uma imagem personalizada com os dados e configurações necessárias para o serviço.
+- Uso do ```docker build``` para o Docker criar a imagem de acordo com o arquivo Dockerfile
+- Aplicação da ferramenta Docker Compose para subir o container que contem os serviços da imagem personalizada
+
+
+
 
 ## 🧠 Sobre o Projeto Web (Pokedex)
 
