@@ -2,30 +2,28 @@
 
 ## 📌 Objetivo
 
-Projeto criado com fins didáticos para aprofundar o entendimento sobre [**Docker Compose**](https://docs.docker.com/compose/). Fiz uso da imagem do [**NGINX**](https://hub.docker.com/_/nginx) para funcionar como servidor web do meu projeto([Pokedex](https://github.com/rgr147/pokedex)) que consome informações da API [**PokeAPI**](https://pokeapi.co/) para carregar os dados pokemon.
+Projeto criado com fins didáticos para aprofundar o entendimento sobre [**Docker Compose**](https://docs.docker.com/compose/). Fiz uso da imagem oficial do [**NGINX**](https://hub.docker.com/_/nginx) que está disponível no [Docker Hub](https://hub.docker.com/) para funcionar servir como servidor web de um projeto web que é alimentado pela API [**PokeAPI**](https://pokeapi.co/) com informações dos pokemons.
 
 ## 🧠 Sobre o Projeto
 
-O projeto consiste em criar uma imagem personalizada para subir o serviço do servidor web funcional com todos os arquivos necessários para o projeto da página web funcionar.
+Este projeto consiste em criar uma imagem Docker personalizada para ter o serviço iniciado e deploy da aplicação Pokedex.
 
 Etapas do processo:
 
-- Uso do Docker para subir containers com serviço web funcional 
-- Configuração do arquivo Dockerfile com instruções necessárias para o Docker criar uma imagem personalizada com os dados e configurações necessárias para o serviço.
-- Uso do ```docker build``` para o Docker criar a imagem de acordo com o arquivo Dockerfile
-- Aplicação da ferramenta Docker Compose para subir o container que contem os serviços da imagem personalizada
+1. Instalação do ambiente Linux Ubunto Server com Docker e Docker Compose instalados.
+2. Edição do arquivo Dockerfile com instruções necessárias para criar uma imagem Docker usando o imagem Docker oficial do NGINX.
+3. Criação da imagem Docker com o comando ```docker build```.
+4. Edição do arquivo YAML "docker-compose.yal" com instruções necessárias para subir o container Docker com a imagem personalizada.
+5. Uso do Docker Compose para subir o container com o servidor web NGINX funcionando.
+
+## 🐳 Estrutura de arquivos do Linux para uso do Docker
+
+No servidor Linux o `Dockerfile` e os arquivos necessários para aplicação web,compactados em `.tar`, estão salvos no diretório `/images/nginx-pokedex/`
+O arquivo `docker-compose.yml` está no diretório `/compose/nginx-pokedex`.
+O diretorio local onde ficará salvo os arquivos do web service está definido como `/data/nginx-pokedex`
 
 
 
-
-## 🧠 Sobre o Projeto Web (Pokedex)
-
-O projeto consiste em páginas HTML que utilizam JavaScript para fazer requisições HTTP à PokeAPI e exibir informações como nome, imagem e dados dos Pokémons.
-Funcionalidades:
-
-Confira o projeto na página do github: Link [Pokedex](https://github.com/rgr147/pokedex)
-
-## 🐳 Estrutura Docker
 
 O serviço principal é o **NGINX**, baixado via Docker Hub. O arquivo `docker-compose.yml` foi configurado para:
 
@@ -52,6 +50,17 @@ services:
 volumes:
   web_data:
 ```
+
+
+
+   
+## 🧠 Sobre o Projeto Web (Pokedex)
+
+O projeto consiste em páginas HTML que utilizam JavaScript para fazer requisições HTTP à PokeAPI e exibir informações como nome, imagem e dados dos Pokémons.
+Funcionalidades:
+
+Confira o projeto na página do github: Link [Pokedex](https://github.com/rgr147/pokedex)
+
 
 ## 🚀 Como Executar
 
